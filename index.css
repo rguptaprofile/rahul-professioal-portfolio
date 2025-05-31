@@ -535,12 +535,17 @@ project section
    color: var(--main);
  }
 
-
 @media (max-width: 480px) {
   .project-card {
     padding: 15px;
   }
 
+/*  end of project styling */
+
+
+
+
+ project section styleing
   .project-card button,
   .project-card .live-btn {
     font-size: 0.8rem;
