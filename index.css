@@ -406,7 +406,7 @@
 
 
 
-
+/* resume section styling */
  .resume span li a {
 
    background-color: #f9aa33;
@@ -437,12 +437,23 @@
      left: 65px;
    }
  }
+/* Responsive behavior of */
+@media (max-width: 600px) {
+    .resume-button {
+        width: 80%;
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+}
 
 
+
+/* project section styling   */
  #projects {
    margin-top: 2rem;
  }
 
+project section
  #projects h2 {
    color: #fff;
  }
