@@ -519,6 +519,28 @@
    color: var(--main);
  }
 
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card button,
+  .project-card .live-btn {
+    font-size: 0.8rem;
+    padding: 8px 14px;
+  }
+
+  .modal-content {
+    margin: 50px 10px;
+    padding: 20px;
+  }
+}
+
+/* end of project section */
+
+
+
  #contact {
    margin-top: 2rem;
  }
