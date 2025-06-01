@@ -418,12 +418,12 @@
  }
 
  .resume span {
-   position: relative;
-   animation: mymove 5s infinite;
-   margin-right: 20rem;
+   position: fixed;
+   /* animation: mymove 5s infinite; */
+   margin-right: 2rem;
  }
 
- @keyframes mymove {
+ /* @keyframes mymove {
    from {
      left: 0px;
    }
@@ -431,7 +431,7 @@
    to {
      left: 65px;
    }
- }
+ } */
 
 
  #projects {

@@ -425,7 +425,7 @@
  .resume span {
    position: fixed;
    /* animation: mymove 5s infinite; */
-   margin-right: 20rem;
+   margin-right: 2rem;
  }
 
  /* @keyframes mymove {
