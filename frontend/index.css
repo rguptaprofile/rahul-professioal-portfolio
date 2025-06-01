@@ -9,67 +9,125 @@
    --shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
  }
 
- * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
- }
+/* Reset + Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- body {
-   font-family: 'Segoe UI', Arial, sans-serif;
-   background-color: rgb(0, 0, 0);
-   color: var(--text);
- }
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
 
- header {
-   background: var(--main);
-   color: #fff;
-   padding: 0.5rem 0;
-   box-shadow: var(--shadow);
- }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0d0d0d;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
- nav {
-   max-width: 1100px;
-   margin: auto;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 0 2rem;
- }
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 30px;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
 
- 
- nav ul {
-   display: flex;
-   list-style: none;
- }
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #00ffff;
+}
 
- nav ul li {
-   margin-left: 2rem;
- }
+/* Nav Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
 
- nav ul li a {
-   color: #fff;
-   text-decoration: none;
-   font-size: 1rem;
-   transition: color 0.2s;
- }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
 
- nav ul li a:hover {
-   color: var(--accent);
- }
+nav ul li a:hover {
+    background-color: #00ffff;
+    color: #000;
+}
 
- main {
-   max-width: 1100px;
-   margin: 2rem auto;
-   padding: 0 1rem;
- }
+/* Menu Toggle Button (Mobile only) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ---------------- Responsive ---------------- */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #111;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+    nav {
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
 
 
- .logo {
-   font-weight: bold;
-   font-size: 1.5rem;
-   letter-spacing: 1px;
- }
+
 
 
 
@@ -80,6 +138,7 @@
 
  /* Base Section Style */
 #home {
+  margin-top: 2rem;
     padding: 40px 20px;
     background-color: hsl(0, 8%, 82%);
     width: 100%;
@@ -105,6 +164,7 @@
 
 /* Profile Image */
 .profile-container {
+  margin-top: 2rem;
     flex: 1 1 300px;
     display: flex;
     justify-content: center;
