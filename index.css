@@ -423,8 +423,8 @@
  }
 
  .resume span {
-   position: relative;
-   animation: mymove 5s infinite;
+   position: fixed;
+   /* animation: mymove 5s infinite; */
    margin-right: 20rem;
  }
 
@@ -437,6 +437,7 @@
      left: 65px;
    }
  } */
+  
 
 /* Responsive behavior of resume */
 @media (max-width: 600px) {
