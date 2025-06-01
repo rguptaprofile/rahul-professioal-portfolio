@@ -428,7 +428,7 @@
    margin-right: 20rem;
  }
 
- @keyframes mymove {
+ /* @keyframes mymove {
    from {
      left: 0px;
    }
@@ -436,8 +436,9 @@
    to {
      left: 65px;
    }
- }
-/* Responsive behavior of */
+ } */
+
+/* Responsive behavior of resume */
 @media (max-width: 600px) {
     .resume-button {
         width: 80%;
