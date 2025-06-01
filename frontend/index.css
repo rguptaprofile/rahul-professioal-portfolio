@@ -248,11 +248,12 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 20px;
+   /* margin-top: 10px; */
    padding: 10px;
+   align-content: space-around;
  }
 
- .resume span {
+ .resume ul {
    list-style-type: none;
    padding: 0;
  }
@@ -281,7 +282,7 @@
  }
 
  .resume a:hover {
-   background-color: #00cccc;
+   background-color: rgb(163, 163, 213);
    transform: scale(1.05);
  }
 

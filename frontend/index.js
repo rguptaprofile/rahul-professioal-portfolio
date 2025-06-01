@@ -99,7 +99,7 @@ window.onclick = function (event) {
 //  Setup and start animation!
 
 var typed = new Typed('#element', {
-  strings: ['Software Developer', 'Front-end Developer', 'Web Developer', 'Artificial Intelligence', 'Cloud computing', 'Machine Learning' , 'Software Engineer'],
+  strings: ['Software Developer', 'Front-end Developer', 'Web Developer', 'Artificial Intelligence', 'Cloud computing', 'Machine Learning', 'Software Engineer'],
   typeSpeed: 80,
 });
 
@@ -110,27 +110,27 @@ var typed = new Typed('#element', {
 // (3D Tilt Based on Mouse Movement)   &    (3D + Responsive + Overflow Visible + Styling)
 
 const container = document.querySelector('.profile-container');
-  const image = container.querySelector('.profile-img');
+const image = container.querySelector('.profile-img');
 
-  container.addEventListener('mousemove', (e) => {
-    const rect = container.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
+container.addEventListener('mousemove', (e) => {
+  const rect = container.getBoundingClientRect();
+  const x = e.clientX - rect.left - rect.width / 2;
+  const y = e.clientY - rect.top - rect.height / 2;
 
-    const rotateX = (-y / rect.height) * 15; // Tilt up/down
-    const rotateY = (x / rect.width) * 15;  // Tilt left/right
+  const rotateX = (-y / rect.height) * 15; // Tilt up/down
+  const rotateY = (x / rect.width) * 15;  // Tilt left/right
 
-    image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-  });
+  image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+});
 
-  container.addEventListener('mouseleave', () => {
-    image.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
-  });
-
-
+container.addEventListener('mouseleave', () => {
+  image.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
+});
 
 
-  // Animate 3D skills on scroll for skills section
+
+
+// Animate 3D skills on scroll for skills section
 document.addEventListener('DOMContentLoaded', () => {
   const skills = document.querySelectorAll('.skills-list span');
 
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Replace with your receiving email address
     const mailtoLink = `mailto:rahulgupt1231@gmail.com?subject=${subject}&body=${body}`;
-    
+
     window.location.href = mailtoLink;
 
     alertBox.innerHTML = "<p style='color:green;'>Opening your email client...</p>";
@@ -230,12 +230,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // javascript for header section 
 
-  
-  const toggleBtn = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
 
-  toggleBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
+const toggleBtn = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggleBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 
 
