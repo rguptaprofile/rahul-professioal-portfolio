@@ -76,7 +76,7 @@ nav ul li a:hover {
     cursor: pointer;
     color: white;
    align-self: flex-end;
-   margin-bottom: 1rem;
+   margin-bottom: 0.8rem;
 }
 
 /* ---------------- Responsive ---------------- */
@@ -302,7 +302,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 10px;
 }
 
