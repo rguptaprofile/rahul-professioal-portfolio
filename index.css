@@ -10,121 +10,124 @@
  }
 
  /* Reset + Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-}
+ body {
+   font-family: Arial, sans-serif;
+   background-color: black;
+ }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #0d0d0d;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+ header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #0d0d0d;
+   z-index: 1000;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
 
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 30px;
-    max-width: 1200px;
-    margin: auto;
-    color: white;
-}
+ /* Navbar */
+ nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 14px 30px;
+   max-width: 1200px;
+   margin: auto;
+   color: white;
+ }
 
-.logo {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #00ffff;
-}
+ .logo {
+   font-size: 1.6rem;
+   font-weight: bold;
+   color: #00ffff;
+ }
 
-/* Nav Links */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
+ /* Nav Links */
+ nav ul {
+   list-style: none;
+   display: flex;
+   gap: 25px;
+ }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: 0.3s ease;
-}
+ nav ul li a {
+   text-decoration: none;
+   color: white;
+   font-size: 1rem;
+   padding: 8px 14px;
+   border-radius: 6px;
+   transition: 0.3s ease;
+ }
 
-nav ul li a:hover {
-    background-color: #00ffff;
-    color: #000;
-}
+ nav ul li a:hover {
+   background-color: #00ffff;
+   color: #000;
+ }
 
-/* Menu Toggle Button (Mobile only) */
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-}
+ /* Menu Toggle Button (Mobile only) */
+ .menu-toggle {
+   display: none;
+   font-size: 28px;
+   cursor: pointer;
+   color: white;
+   align-self: flex-end;
+   margin-bottom: 1rem;
+ }
 
-/* ---------------- Responsive ---------------- */
+ /* ---------------- Responsive ---------------- */
 
-/* Tablet and below */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+ /* Responsive styles */
+ @media (max-width: 768px) {
+   .menu-toggle {
+     display: block;
+   }
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #111;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 20px 0;
-    }
+   #nav-links {
+     display: none;
+     flex-direction: column;
+     background: #1a1a1a;
+     position: absolute;
+     top: 60px;
+     right: 20px;
+     width: 200px;
+     padding: 10px 0;
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+   }
 
-    nav ul.active {
-        display: flex;
-    }
+   #nav-links.active {
+     display: flex;
+   }
 
-    nav ul li {
-        text-align: center;
-        padding: 10px 0;
-    }
+   /* #nav-links li {
+    text-align: right;
+    padding: 10px 20px;
+  } */
 
-    nav ul li a {
-        padding: 10px 20px;
-        font-size: 1.1rem;
-    }
-}
+   #nav-links li a {
+     font-size: 1.1rem;
+   }
+ }
 
-/* Small devices */
-@media (max-width: 480px) {
-    nav {
-        padding: 12px 20px;
-    }
+ /* Small devices */
+ @media (max-width: 480px) {
+   nav {
+     padding: 12px 20px;
+   }
 
-    .logo {
-        font-size: 1.3rem;
-    }
+   .logo {
+     font-size: 1.3rem;
+   }
 
-    nav ul li a {
-        font-size: 1rem;
-    }
-}
+   nav ul li a {
+     font-size: 1rem;
+   }
+ }
 
 
 
@@ -191,183 +194,174 @@ nav ul li a:hover {
    padding: 0 1rem;
  }
 
-/* Base Section Style */
-#home {
-    padding: 40px 20px;
-    background-color: hsl(0, 8%, 82%);
-    width: 100%;
-    box-sizing: border-box;
-}
+ /* Base Section Style */
+ #home {
+   padding: 40px 20px;
+   background-color: hsl(0, 8%, 82%);
+   width: 100%;
+   box-sizing: border-box;
+   border-radius: 15px;
+ }
 
-#element {
-  color: rgb(172, 100, 172);
-  font-size: 2rem;
-}
+ #element {
+   color: rgb(172, 100, 172);
+   font-size: 2rem;
+ }
 
-/* Home Content Container */
-.home-content {
-  margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 30px;
-}
+ /* Home Content Container */
+ .home-content {
+   margin-top: 2rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 1200px;
+   margin: 0 auto;
+   gap: 30px;
+ }
 
-/* Profile Image */
-.profile-container {
-  margin-top: 2rem;
-    flex: 1 1 300px;
-    display: flex;
-    justify-content: center;
-}
+ /* Profile Image */
+ .profile-container {
+   margin-top: 2rem;
+   flex: 1 1 300px;
+   display: flex;
+   justify-content: center;
+ }
 
-.profile-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #0077b5;
-}
+ .profile-img {
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 5px solid #0077b5;
+ }
 
-/* Article Text */
-.home-article {
-    flex: 2 1 500px;
-    text-align: left;
-}
+ /* Article Text */
+ .home-article {
+   flex: 2 1 500px;
+   text-align: left;
+ }
 
-.home-article h1 {
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bold;
-}
+ .home-article h1 {
+   font-size: 2rem;
+   margin: 0;
+   font-weight: bold;
+ }
 
-.home-article p {
-    font-size: 1rem;
-    margin-top: 10px;
-    line-height: 1.6;
-}
+ .home-article p {
+   font-size: 1rem;
+   margin-top: 10px;
+   line-height: 1.6;
+ }
 
-/* Social Buttons (already styled) */
-.social-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
+ /* Social Buttons (already styled) */
+ .social-buttons {
+   display: flex;
+   gap: 15px;
+   margin-top: 20px;
+   flex-wrap: wrap;
+ }
 
-/* Social Button Style */
-.social-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    border-radius: 50%;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
+ /* Social Button Style */
+ .social-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 45px;
+   height: 45px;
+   font-size: 20px;
+   border-radius: 50%;
+   color: white;
+   text-decoration: none;
+   transition: all 0.3s ease;
+ }
 
-.social-btn.linkedin {
-    background-color: #0077b5;
-}
+ .social-btn.linkedin {
+   background-color: #0077b5;
+ }
 
-.social-btn.leetcode {
-    background-color: #f89f1b;
-}
+ .social-btn.leetcode {
+   background-color: #f89f1b;
+ }
 
-.social-btn.github {
-    background-color: #333;
-}
+ .social-btn.github {
+   background-color: #333;
+ }
 
-.social-btn:hover {
-    transform: scale(1.1);
-}
+ .social-btn:hover {
+   transform: scale(1.1);
+ }
 
-/* Resume Button */
-.resume {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
-.resume li {
-    list-style: none;
-}
 
-.resume a {
-    display: inline-block;
-    padding: 10px 25px;
-    background-color: #0077b5;
-    color: white;
-    border-radius: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
 
-.resume a:hover {
-    background-color: #005f91;
-}
 
-/* ----------------------- RESPONSIVENESS ----------------------- */
 
-/* Tablets (768px and below) */
-@media (max-width: 768px) {
-    .home-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+ /* Resume Button */
+ /* Base styles for the resume section */
+ .resume {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   padding: 10px;
+ }
 
-    .home-article h1 {
-        font-size: 2rem;
-    }
+ .resume span {
+   list-style-type: none;
+   padding: 0;
+ }
 
-    .profile-img {
-        width: 200px;
-        height: 200px;
-    }
+ .resume li {
+   margin: 10px 0;
+ }
 
-    .resume {
-        justify-content: center;
-    }
-}
+ .resume a {
+   display: inline-flex;
+   align-items: center;
+   gap: 10px;
+   background-color: #caae11;
+   color: #000;
+   text-decoration: none;
+   font-weight: bold;
+   padding: 12px 24px;
+   border-radius: 30px;
+   font-size: 1rem;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   transition: background 0.3s, transform 0.2s;
+ }
 
-/* Mobile (480px and below) */
-@media (max-width: 480px) {
-    .home-article h1 {
-        font-size: 1.6rem;
-    }
+ .resume a i {
+   font-size: 1.2rem;
+ }
 
-    .home-article p {
-        font-size: 0.95rem;
-    }
+ .resume a:hover {
+   background-color: #00cccc;
+   transform: scale(1.05);
+ }
 
-    .profile-img {
-        width: 160px;
-        height: 160px;
-    }
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   .resume a {
+     padding: 10px 18px;
+     font-size: 0.95rem;
+   }
+ }
 
-    .social-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
+ @media (max-width: 480px) {
+   .resume {
+     flex-direction: column;
+     padding: 8px;
+   }
 
-    .resume a {
-        padding: 8px 20px;
-        font-size: 0.9rem;
-    }
-}
+   .resume a {
+     width: 90%;
+     text-align: center;
+     font-size: 0.9rem;
+   }
+ }
 
-  
  /* end of social links styling */
 
 
@@ -391,7 +385,7 @@ nav ul li a:hover {
 
 
  .about-container img {
-  height: 300px;
+   height: 300px;
    width: 300px;
    border-radius: 20px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -437,7 +431,7 @@ nav ul li a:hover {
    .about-container img {
      width: 200px;
    }
-  
+
    .about-container img {
      height: 200px;
    }
@@ -545,7 +539,7 @@ nav ul li a:hover {
    background: hsl(0, 8%, 82%);
    border-radius: 15px;
    padding: 25px;
-   max-width: 768px;
+   max-width: 100px;
    text-align: left;
    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
    transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -581,7 +575,7 @@ nav ul li a:hover {
    }
 
    .internship-card {
-     width: 90%;
+     width: 100%;
    }
  }
 
@@ -591,24 +585,23 @@ nav ul li a:hover {
 
 
 
-/* Responsive behavior of resume */
-@media (max-width: 600px) {
-    .resume-button {
-        width: 80%;
-        font-size: 0.95rem;
-        padding: 10px 20px;
-    }
-}
+ /* Responsive behavior of resume */
+ @media (max-width: 600px) {
+   .resume-button {
+     width: 80%;
+     font-size: 0.95rem;
+     padding: 10px 20px;
+   }
+ }
 
 
 
-/* project section styling   */
+ /* project section styling   */
  #projects {
    margin-top: 2rem;
  }
 
-project section
- #projects h2 {
+ project section #projects h2 {
    color: #fff;
  }
 
@@ -689,30 +682,29 @@ project section
    color: var(--main);
  }
 
-@media (max-width: 480px) {
-  .project-card {
-    padding: 15px;
-  }
+ @media (max-width: 480px) {
+   .project-card {
+     padding: 15px;
+   }
 
-/*  end of project styling */
-
-
+   /*  end of project styling */
 
 
- project section styleing
-  .project-card button,
-  .project-card .live-btn {
-    font-size: 0.8rem;
-    padding: 8px 14px;
-  }
 
-  .modal-content {
-    margin: 50px 10px;
-    padding: 20px;
-  }
-}
 
-/* end of project section */
+   project section styleing .project-card button,
+   .project-card .live-btn {
+     font-size: 0.8rem;
+     padding: 8px 14px;
+   }
+
+   .modal-content {
+     margin: 50px 10px;
+     padding: 20px;
+   }
+ }
+
+ /* end of project section */
 
 
 
