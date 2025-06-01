@@ -88,7 +88,7 @@
 
 #element {
   color: rgb(172, 100, 172);
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 /* Home Content Container */
@@ -125,7 +125,7 @@
 }
 
 .home-article h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     font-weight: bold;
 }
