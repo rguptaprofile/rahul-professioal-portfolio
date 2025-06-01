@@ -391,7 +391,7 @@
 
  @media (max-width: 768px) {
    .internship-container {
-     flex-direction: column;
+     flex-direction: row;
      align-items: center;
    }
 
