@@ -772,6 +772,7 @@ project section
    background-color: hsl(0, 8%, 82%);
    margin-top: 2rem;
    color: #555;
+   border-radius: 5px;
  }
 
  @media (max-width: 700px) {
