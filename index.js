@@ -166,6 +166,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
+    const number = document.getElementById("number").value.trim();
+    const address = document.getElementById("address").value.trim();
     const country = document.getElementById("country").value;
     const message = document.getElementById("message").value.trim();
 
